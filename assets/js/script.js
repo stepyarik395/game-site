@@ -265,8 +265,8 @@ function tabHandler(e) {
 
 const inpSearch = document.getElementById('search');
 inpSearch.addEventListener('focus', () => {
-  document.querySelector('.header__loop').style.display = 'none';
+  document.querySelector('.header__loop').style.color = 'white';
 });
 inpSearch.addEventListener('blur', () => {
-  document.querySelector('.header__loop').style.display = 'block';
+  document.querySelector('.header__loop').style.color = '#867594';
 });
