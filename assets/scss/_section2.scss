@@ -1,0 +1,263 @@
+.section2 {
+  h2 {
+    padding-top: 4rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.6rem;
+    font-family: $font-lato;
+  }
+}
+
+.section2_pdt {
+  padding-top: 5rem;
+}
+
+.section2__filters__wrapper {
+  span {
+    color: #b9a8c8;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-family: $font-lato;
+    cursor: pointer;
+  }
+}
+
+.filter_active {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ffa008;
+  color: #e2e1e2 !important;
+}
+
+.section2__circle {
+  margin-left: 3px;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #8a7a98;
+}
+
+.section2__active_circle {
+  background-color: #3f3844 !important;
+}
+
+.section2__flex__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.section2__main__row {
+  padding-top: 4rem;
+}
+
+.section2__card {
+  position: relative;
+  width: 97% !important;
+  background-color: #18151a;
+}
+
+.section2__card__old__price {
+  color: #8a7a98;
+  text-decoration: line-through;
+  font-size: 1.4rem;
+  font-family: $font-lato;
+}
+
+.section2__card__new__price {
+  display: inline-block;
+  margin-left: 1.5rem;
+  color: #ff6c84;
+  font-weight: 900;
+  font-size: 2rem;
+  font-family: $font-lato;
+}
+
+.section2__card__img {
+  width: 100%;
+}
+
+.section2__card__title {
+  padding-top: 2.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.8rem;
+  font-family: $font-lato;
+}
+
+.section2__card__description {
+  padding-top: 3rem;
+  color: #c4b2d3;
+  font-weight: 300;
+  font-size: 1.4rem;
+  font-family: $font-lato;
+}
+
+.sticker {
+  position: absolute;
+  top: -4px;
+  right: -7px;
+}
+
+.button__redmore {
+  min-width: 50%;
+  height: 45px;
+  border: none;
+  background-color: #664480;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-family: $font-lato;
+}
+
+.button__bymore {
+  min-width: 50%;
+  height: 45px;
+  border: none;
+  background: rgb(255, 115, 20);
+  background: linear-gradient(90deg, rgba(255, 115, 20, 1) 0%, rgba(255, 181, 2, 1) 35%);
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1.6rem;
+  font-family: $font-lato;
+}
+
+.section2__hiden__buttons {
+  position: absolute;
+  bottom: 0;
+  z-index: 12;
+  display: flex;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.section2__card_position {
+  position: relative;
+}
+
+.pdl_wrap {
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  height: 250px;
+}
+
+.section2__card__stars__wrapper {
+  display: flex;
+}
+
+.section2__slider1 {
+  display: none;
+  padding-top: 4rem;
+
+  .slick-dots li button:before {
+    color: #8a7a98 !important;
+    font-size: 1rem;
+    opacity: 1 !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #433c48 !important;
+  }
+
+  .slick-dots {
+    top: -30px;
+    right: 10px !important;
+    bottom: -40px !important;
+    width: auto !important;
+  }
+
+  .slick-dots li {
+    margin: 0 1px !important;
+    width: 13px !important;
+  }
+}
+
+.section2__slider2 {
+  display: none;
+  padding-top: 4rem;
+
+  .slick-dots li button:before {
+    color: #8a7a98 !important;
+    font-size: 1rem;
+    opacity: 1 !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #433c48 !important;
+  }
+
+  .slick-dots {
+    top: -30px;
+    right: 0;
+    bottom: -40px !important;
+    width: auto !important;
+  }
+
+  .slick-dots li {
+    margin: 0 1px !important;
+    width: 13px !important;
+  }
+}
+
+.section2__slider3 {
+  display: none;
+  padding-top: 4rem;
+
+  .slick-dots li button:before {
+    color: #8a7a98 !important;
+    font-size: 1rem;
+    opacity: 1 !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: #433c48 !important;
+  }
+
+  .slick-dots {
+    top: -30px;
+    right: 0;
+    bottom: -40px !important;
+    width: auto !important;
+  }
+
+  .slick-dots li {
+    margin: 0 1px !important;
+    width: 13px !important;
+  }
+}
+
+.active__tab__slider {
+  display: block !important;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.flex__line_align {
+  display: flex;
+  align-items: center;
+}
