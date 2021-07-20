@@ -269,11 +269,11 @@
 
 @media (min-width: 768px) and (max-width: 992px) {
   .modal-register {
-    left: 35%;
+    left: 30%;
   }
 
   .modal-login {
-    left: 35%;
+    left: 30%;
   }
 
   .header__loop {
@@ -445,6 +445,18 @@
 
 
 @media (min-width: 576px) and (max-width: 768px) {
+  .modal-register {
+    top: 0;
+    left: 0;
+    width: 80%;
+  }
+
+  .modal-login {
+    top: 0;
+    left: 0;
+    width: 80%;
+  }
+
   .container {
     min-width: auto !important;
   }
@@ -588,6 +600,54 @@
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
+  .modal-register {
+    top: 0;
+    left: 0;
+    width: 80%;
+  }
+
+  .modal-login {
+    top: 0;
+    left: 0;
+    width: 80%;
+  }
+
+  .modal-register-flex-wrapper {
+    flex-direction: column;
+  }
+
+  .modal-register-flex-wrapper div {
+    padding-top: 1rem;
+    padding-left: 0;
+  }
+
+  .modal-register-header {
+    padding-left: 1rem;
+  }
+
+  .modal-register__wrapper {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .modal-login-flex-wrapper {
+    flex-direction: column;
+  }
+
+  .modal-login-flex-wrapper div {
+    padding-top: 1rem;
+    padding-left: 0;
+  }
+
+  .modal-login-header {
+    padding-left: 1rem;
+  }
+
+  .modal-login__wrapper {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
   .section4__flex-wrapper1 ul {
     padding-right: 0;
   }
@@ -611,8 +671,6 @@
   .header__mob__burg {
     display: block;
   }
-
-
 
   .section1__slider__item h1 {
     padding-top: 8rem;
