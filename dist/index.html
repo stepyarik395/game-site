@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>game page</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lato:wght@300;400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="modal-register" id="modal-register">
+    <div class="modal-register-header">
+      <h5>Create account</h5>
+      <button data-close-button class="button-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-register-container">
+      <form>
+        <div class="modal-register__wrapper">
+          <input type="text" placeholder="Username" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" autocomplete="on" required>
+          <div class="modal-register-flex-wrapper">
+            <button class="modal-register__submit btn_set__orange">Register</button>
+            <div>
+              <span>Have account ?<br>
+                <a href="#">Login Here</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal-login" id="modal-login">
+    <div class="modal-login-header">
+      <h5>Sign in</h5>
+      <button data-close-button class="button-close"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-login-container">
+      <form>
+        <div class="modal-login__wrapper">
+          <input type="text" placeholder="Username or email" required>
+          <input type="password" placeholder="Password" required autocomplete="on">
+          <div class="modal-register-flex-wrapper">
+            <button class="modal-login__submit btn-set__purple">Login</button>
+            <div>
+              <span>Now account ?<br>
+                <a href="#">Register Here</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div id="overlay" class="overlay"></div>
+  <div class="main__wrapper">
+    <div class="container">
+      <header class="header">
+        <div class="row header__wrapper justify-content-between justify-content-md-between align-items-center">
+          <div class="col-xl-auto col-lg-2 col-md-2 col-sm-2 col-auto ps-4 ps-xl-2 ps-lg-2 ps-md-2">
+            <img class="header__logo" src="./img/logo.png" alt="logo">
+          </div>
+          <div
+            class="pe-0 col-xxl-6 col-xl-6 col-lg-6 col-md-7 col-sm-3 col-auto pe-4 pe-md-2 pe-xl-0 header__wrapper-form">
+            <img class="header__mob__burg" src="./img/burg.png" alt="picture">
+            <div class="header__hide__mob">
+              <i class="fas fa-search header__loop"></i>
+              <input id="search" class="header__inp-search" type="text" placeholder="Search game...">
+              <button data-modal-target="#modal-register" class="header__btn-register btn_set__orange">register</button>
+              <button data-modal-target="#modal-login" class="header__btn-login btn-set__purple">login</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="row">
+        <div class="separating-line"></div>
+      </div>
+      <div class="row">
+        <div class="col-xl-9 col-lg-12 col-md-12">
+          <nav>
+            <ul class="nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Games</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contacts</a></li>
+              <li><a href="#">Terms and conditions of use </a></li>
+              <li><a href="#">Secure payment</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="section1">
+        <div class="section1__slider">
+          <div class="section1__slider__item">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 px-4 px-xl-2 px-lg-2 px-md-2">
+                  <h1>Horizon</h1>
+                  <h2>Forbidden west</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+                  <p>Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla<br> Games and
+                    published
+                    by
+                    Sony Interactive Entertainment.</p>
+                </div>
+              </div>
+              <div
+                class="row justify-content-center justify-content-sm-start justify-content-md-start justify-content-lg-start">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-auto">
+                  <button class="section1__slider__item__button btn_set__orange">Play now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section1__slider__item">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 px-4 px-xl-2 px-lg-2 px-md-2">
+                  <h1>Horizon</h1>
+                  <h2>Forbidden west</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+                  <p>Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla<br> Games
+                    and
+                    published
+                    by
+                    Sony Interactive Entertainment.</p>
+                </div>
+              </div>
+              <div
+                class="row justify-content-center justify-content-sm-start justify-content-md-start justify-content-lg-start">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-auto">
+                  <button class="section1__slider__item__button btn_set__orange">Play now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section1__slider__item">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12 px-4 px-xl-2 px-lg-2 px-md-2">
+                  <h1>Horizon</h1>
+                  <h2>Forbidden west</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 px-4">
+                  <p>Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla<br> Games and
+                    published
+                    by
+                    Sony Interactive Entertainment.</p>
+                </div>
+              </div>
+              <div
+                class="row justify-content-center justify-content-sm-start justify-content-md-start justify-content-lg-start">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-auto">
+                  <button class="section1__slider__item__button btn_set__orange">Play now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section1__banner__wrapper">
+            <div class="row">
+              <div class="col-xl-4 col-lg-12 col-md-12 p-0 pe-xl-2 ps-xl-2">
+                <div class="section1__banner">
+                  <img src="./img/fast-delivery.png" alt="icon">
+                  <div>
+                    <h5>
+                      Free Delivery
+                    </h5>
+                    <p>Free Shipping On All Order lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-12 col-md-12 p-0 pe-xl-2 ps-xl-2">
+                <div class="section1__banner">
+                  <img src="./img/money.png" alt="icon">
+                  <div>
+                    <h5>
+                      Money Return
+                    </h5>
+                    <p>Back Guarantee in 7 days dolor sit amet, consectetuer adipiscing elit
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-12 col-md-12 p-0 ps-xl-2 pe-xl-0 ">
+                <div class="section1__banner">
+                  <img src="./img/price-tag.png" alt="icon">
+                  <div>
+                    <h5>
+                      Member Discount
+                    </h5>
+                    <p>
+                      On every order over $130.00 consectetuer
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section2">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto">
+              <h2>top games</h2>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-around justify-content-sm-between section2_pdt">
+            <div
+              class="col-xl-3 col-lg-4 col-md-5 col-sm-7 col-12 px-4 d-flex justify-content-between section2__filters__wrapper">
+              <span class="filter__item" data-sort="all">All</span>
+              <span class="filter__item" data-sort="adventure">Adventure</span>
+              <span class="filter__item filter_active" data-sort="racing">Racing & Flying</span>
+            </div>
+          </div>
+          <div class="separating-line"></div>
+          <div class="row">
+            <div class="section2__slider1 section2__slider__content active__tab__slider" data-sort="racing">
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">
+                    Ratchet & Clank: Rift Apart
+                  </h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $62.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $40.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">For norland produce age wishing. To figure on it spring
+                    season
+                    up.
+                    Her provision
+                    acuteness had
+                    excellent two why intention.</p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line.">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <div class="section2__card_position">
+                  <img class="section2__card__img" src="./img/section2__img2.jpg" alt="picture">
+                  <div class="overlay">
+                    <div class="section2__hiden__buttons">
+                      <button class="button__redmore btn-set__purple">Read More</button>
+                      <button class="button__bymore btn_set__orange">By Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Sackboy: A Big Adventure</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__new__price">
+                        $85.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    For norland produce age wishing. To figure on it spring season up.
+                    Her provision acuteness had excellent two why intention...
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="section2__card__img" src="./img/section2__img3.jpg" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Crash Bandicoot 4 - It's About Time</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__new__price">
+                        $240.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    For norland produce age wishing. To figure on it spring season up. Her provision acuteness
+                    had
+                    excellent two why intention.
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="section2__card__img" src="./img/section2__img3.jpg" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Crash Bandicoot 4 - It's About Time</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__new__price">
+                        $240.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    For norland produce age wishing. To figure on it spring season up. Her provision acuteness
+                    had
+                    excellent two why intention.
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section2__slider2 section2__slider__content" data-sort="adventure">
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">
+                    Ratchet & Clank: Rift Apart
+                  </h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class=" flex__line_align">
+                      <span class="section2__card__old__price">
+                        $62.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $40.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">For norland produce age wishing. To figure on it spring
+                    season
+                    up.
+                    Her provision
+                    acuteness had
+                    excellent two why intention.</p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <div class="section2__card_position">
+                  <img class="section2__card__img" src="./img/section2__img2.jpg" alt="picture">
+                  <div class="overlay">
+                    <div class="section2__hiden__buttons">
+                      <button class="button__redmore btn-set__purple">Read More</button>
+                      <button class="button__bymore btn_set__orange">By Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Sackboy: A Big Adventure</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__new__price">
+                        $85.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    For norland produce age wishing. To figure on it spring season up.
+                    Her provision acuteness had excellent two why intention...
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="section2__card__img" src="./img/section2__img3.jpg" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Crash Bandicoot 4 - It's About Time</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__new__price">
+                        $240.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    For norland produce age wishing. To figure on it spring season up. Her provision acuteness
+                    had
+                    excellent two why intention.
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="section2__card__img" src="./img/section2__img3.jpg" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Crash Bandicoot 4 - It's About Time</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__new__price">
+                        $240.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    For norland produce age wishing. To figure on it spring season up. Her provision acuteness
+                    had
+                    excellent two why intention.
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="section2__slider3 section2__slider__content" data-sort="all">
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">
+                    Ratchet & Clank: Rift Apart
+                  </h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $62.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $40.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">For norland produce age wishing. To figure on it spring
+                    season
+                    up.
+                    Her provision
+                    acuteness had
+                    excellent two why intention.</p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <div class="section2__card_position">
+                  <img class="section2__card__img" src="./img/section2__img2.jpg" alt="picture">
+                  <div class="overlay">
+                    <div class="section2__hiden__buttons">
+                      <button class="button__redmore btn-set__purple">Read More</button>
+                      <button class="button__bymore btn_set__orange">By Now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Sackboy: A Big Adventure</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__new__price">
+                        $85.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    For norland produce age wishing. To figure on it spring season up.
+                    Her provision acuteness had excellent two why intention...
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="section2__card__img" src="./img/section2__img3.jpg" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Crash Bandicoot 4 - It's About Time</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__new__price">
+                        $240.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    For norland produce age wishing. To figure on it spring season up. Her provision acuteness
+                    had
+                    excellent two why intention.
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="section2__card__img" src="./img/section2__img3.jpg" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Crash Bandicoot 4 - It's About Time</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__new__price">
+                        $240.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    For norland produce age wishing. To figure on it spring season up. Her provision acuteness
+                    had
+                    excellent two why intention.
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+              <div class="section2__card">
+                <img class="sticker" src="./img/icon-30.png" alt="picture">
+                <img class="section2__card__img" src="./img/section2__img1.png" alt="picture">
+                <div class="pdl_wrap">
+                  <h5 class="section2__card__title">Horizon Forbidden West</h5>
+                  <div class="section2__flex__line">
+                    <div class="section2__card__stars__wrapper">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-color.png" alt="picture">
+                      <img src="./img/star-opacity.png" alt="picture">
+                    </div>
+                    <div class="flex__line_align">
+                      <span class="section2__card__old__price">
+                        $282.02
+                      </span>
+                      <span class="section2__card__new__price">
+                        $140.95
+                      </span>
+                    </div>
+                  </div>
+                  <p class="section2__card__description">
+                    Horizon Forbidden West is an upcoming action role-playing game developed by Guerrilla Games
+                    and
+                    published by Sony Interactive Entertainment....
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section3">
+        <div class="container">
+          <div class="section3__slider">
+            <div>
+              <div class="row justify-content-center section3__wrapper">
+                <div
+                  class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-auto d-flex flex-column align-items-center justify-content-center">
+                  <img src="./img/section3__img.png" alt="picture">
+                  <h2 class="section3__title">Valerie Rish</h2>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12 px-4">
+                  <p class="section3__text">The final scene of Horizon Zero Dawn reveals HADES has not been completely
+                    defeated. A dark entity —
+                    thought to be HADES — shoots out of a pile of rubble and is captured by Sylens, a secondary
+                    character
+                    thought to be Aloy’s ally.
+                  </p>
+                  <p class="section3__text">
+                    He seems hungry for knowledge about the evil system’s “masters” and seems ready to stop at nothing
+                    to
+                    acquire it. He could be the main villain of Horizon Forbidden West or the catalyst for its events
+                    at
+                    the
+                    very least.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row justify-content-center section3__wrapper">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-auto d-flex flex-column align-items-center
+                  justify-content-center">
+                  <img src="./img/section3__img.png" alt="picture">
+                  <h2 class="section3__title">Valerie Rish</h2>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <p class="section3__text">The final scene of Horizon Zero Dawn reveals HADES has not been completely
+                    defeated. A dark entity —
+                    thought to be HADES — shoots out of a pile of rubble and is captured by Sylens, a secondary
+                    character
+                    thought to be Aloy’s ally.
+                  </p>
+                  <p class="section3__text">
+                    He seems hungry for knowledge about the evil system’s “masters” and seems ready to stop at nothing
+                    to
+                    acquire it. He could be the main villain of Horizon Forbidden West or the catalyst for its events
+                    at
+                    the
+                    very least.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="row justify-content-center section3__wrapper">
+                <div
+                  class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-auto d-flex flex-column align-items-center justify-content-center">
+                  <img src="./img/section3__img.png" alt="picture">
+                  <h2 class="section3__title">Valerie Rish</h2>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-12">
+                  <p class="section3__text">The final scene of Horizon Zero Dawn reveals HADES has not been completely
+                    defeated. A dark entity —
+                    thought to be HADES — shoots out of a pile of rubble and is captured by Sylens, a secondary
+                    character
+                    thought to be Aloy’s ally.
+                  </p>
+                  <p class="section3__text">
+                    He seems hungry for knowledge about the evil system’s “masters” and seems ready to stop at nothing
+                    to
+                    acquire it. He could be the main villain of Horizon Forbidden West or the catalyst for its events
+                    at
+                    the
+                    very least.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section4">
+        <div class="container">
+          <div class="row justify-content-center justify-content-sm-center justify-content-md-center">
+            <div class="col-xl-9 col-lg-8 col-md-10 col-sm-12 px-4">
+              <div class="section4_flex-wrapper">
+                <div>
+                  <img class="section4__tab_hide" src="./img/section4__img.png" alt="picture">
+                </div>
+                <div class="section4__flex__item">
+                  <h3>A FEW WORDS ABOUT US</h3>
+                  <p class="section4__text">One of the Playstation’s biggest game expected to be released on the
+                    PlayStation 5 in 2021 is <a href="#">Horizon
+                      Forbidden West</a>, a sequel to Guerilla Games' open-world sci-fi game from 2017. Sony Interactive
+                    Entertainment has continued to pull back the curtain on the long-awaited sequel where Aloy's
+                    adventure
+                    continues. This is everything that you'd want to know about the game, including its release window,
+                    platforms, and story details.</p>
+                  <p class="section4__text">SIE and Guerrilla gave gamers their first in-depth look at the upcoming
+                    open-world title during a PS5
+                    reveal event on June 11. </p>
+                  <button class="btn-set__purple">Learn more</button>
+                </div>
+              </div>
+              <p class="section4__text_pdt section4__text">Leading up to those colossal announcements, Guerrilla had
+                teased the sequel's
+                existence with a handful of
+                mysterious job openings and even a few accidental social media posts. But now the title has been
+                confirmed
+                as an early release to show off the technical capabilities of the PS5 by continuing Aloy's critically
+                acclaimed storyline.</p>
+              <h4 class="section4__small__title">What could the Horizon Forbidden West story be about?</h4>
+              <p class="section4__text">Gamers play as Aloy, a member of one of many warring tribes that stumbles upon
+                the
+                origins of the
+                mechanical beasts the rule the world. They were created by a company named Faro Automated Solutions,
+                nearly 1,000 ago as “peacemakers,” but need biomass for fuel. Eventually, they consumed so much of the
+                Earth’s biosphere that it eradicated most humans. But there was a Plan B.</p>
+              <div class="section4__flex-wrapper1">
+                <div>
+                  <h4>Game Features</h4>
+                  <ul>
+                    <li>Faro also created an artificial intelligence named GAIA, that could shut down</li>
+                    <li>Make the Earth livable for humans again</li>
+                    <li>System designed to teach humans to not repeat the mistakes of the last generation, was sabotaged
+                      by
+                      Faro and led to the rise of Aloy’s tribal society. He seems hungry for knowledge about the evil
+                      system’s
+                      “masters” and seems ready to stop</li>
+                    <li>Faro also created an artificial intelligence named GAIA, that could shut down
+                      Make the Earth livable for humans again.</li>
+                    <li>System designed to teach humans to not repeat the mistakes of the last generation, was sabotaged
+                      by
+                      Faro and led to the rise of Aloy’s tribal society. He seems hungry for </li>
+                  </ul>
+                </div>
+                <div class="section4__img__wrapper">
+                  <img class="section4__tab_hide" src="./img/section4__img3.png" alt="picture">
+                </div>
+              </div>
+              <p class="section4__text_pdt1 section4__text">Leading up to those colossal announcements, Guerrilla had
+                teased the sequel's
+                existence with a handful
+                of
+                mysterious job openings and even a few accidental social media posts. But now the title has been
+                confirmed
+                as an early release to show off the technical capabilities of the PS5 by continuing Aloy's critically
+                acclaimed storyline.</p>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10 p-0">
+              <aside class="section4__aside_set">
+                <div class="section2__card section4__side__card">
+                  <h4 class="section4__side__card__title">
+                    Deal of the day
+                  </h4>
+                  <img class="section2__card__img" src="./img/section4__img2.png" alt="picture">
+                  <img class="sticker" src="./img/icon-70.png" alt="picture">
+                  <div class="pdl_wrap">
+                    <h5 class="section2__card__title">Watch Dogs: Legion</h5>
+                    <div class="section2__flex__line">
+                      <div class="section2__card__stars__wrapper">
+                        <img src="./img/star-color.png" alt="picture">
+                        <img src="./img/star-color.png" alt="picture">
+                        <img src="./img/star-color.png" alt="picture">
+                        <img src="./img/star-color.png" alt="picture">
+                        <img src="./img/star-opacity.png" alt="picture">
+                      </div>
+                      <div class="flex__line_align">
+                        <span class="section2__card__old__price">
+                          $100.02
+                        </span>
+                        <span class="section2__card__new__price">
+                          $30.95
+                        </span>
+                      </div>
+                    </div>
+                    <p class="section2__card__description">
+                      For norland produce age wishing. To figure on it spring season up. Her provision acuteness
+                      had
+                      excellent two why intention.
+                    </p>
+                  </div>
+                  <div id="clockdiv">
+                    <div>
+                      <span class="days"></span>
+                      <div class="smalltext">Days</div>
+                    </div>
+                    <div>
+                      <span class="hours"></span>
+                      <div class="smalltext">Hours</div>
+                    </div>
+                    <div>
+                      <span class="minutes"></span>
+                      <div class="smalltext">Minutes</div>
+                    </div>
+                    <div>
+                      <span class="seconds"></span>
+                      <div class="smalltext">Seconds</div>
+                    </div>
+                  </div>
+                  <div class="section4__wrapper__button">
+                    <button class="section4__side__button btn_set__orange">by now</button>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row  footer_position">
+          <div class="footer__separating__line"></div>
+          <div class="col-xl-3 col-lg-3 col-md-6 order-3 order-xl-1 px-4">
+            <h5 class="footer__title">Contact INFO & PAYMENT <i class="fas fa-angle-down icon_rotate"></i></h5>
+            <div class="footer__wrapper">
+              <div class="footer__flex__container">
+                <div>
+                  <img src="./img/geo.png" alt="picture">
+                </div>
+                <span>Game Store<br>
+                  507-Union Trade ipsum Doler Centre<br>
+                  UK</span>
+              </div>
+              <div class="footer__flex__container">
+                <div>
+                  <img src="./img/phone-call.png" alt="picture">
+                </div>
+                <a href="tel:+38789-789-7897">+38 789-789-7897</a>
+              </div>
+              <div class="footer__flex__container">
+                <div>
+                  <img src="./img/email.png" alt="picture">
+                </div>
+
+                <a href="mailto:sales@yourcompany.com">sales@yourcompany.com</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 order-1 order-xl-2 px-4">
+            <h5 class="footer__title">menu</h5>
+            <ul class="footer__list">
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Legal Notice</a></li>
+              <li><a href="#">Terms and conditions of use</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Secure payment</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 order-2 order-xl-3 px-4">
+            <h5 class="footer__title">USEFUL LINKS <i class="fas fa-angle-down"></i></h5>
+            <ul class="footer__list toggle__active">
+              <li><a href="#">Hot Trending</a></li>
+              <li><a href="#">Our Store</a></li>
+              <li><a href="#">New Arrival</a></li>
+              <li><a href="#">Best Seller</a></li>
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">Warranty and Services</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 order-4 order-xl-4 px-4 pe-xl-0">
+            <h5 class="footer__title">Our Newsletter</h5>
+            <p class="footer__text">But now the title has been confirmed as an early release<br> to show off the
+              technical capabilities of
+              the
+              PS5 by continuing Aloy's critically acclaimed storyline.</p>
+            <div class="footer__form__wrapper">
+              <form>
+                <input class="footer__inp" type="email" placeholder="Your email... ">
+                <button class="footer__submit__btn btn_set__orange" type="submit">subscribe</button>
+              </form>
+            </div>
+            <div class="footer__wrapper__icons__block">
+              <div class="footer__icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"> <i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+              <div>
+                <span class="footer__copy__text">Copyright © 2021 . All Rights Reserved</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/262a557cc7.js" crossorigin="anonymous"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+
+</html>
