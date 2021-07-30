@@ -198,7 +198,7 @@ function closeModal(modal) {
 
 const filterItems = document.querySelectorAll('.filter__item');
 const clickTraget = document.querySelector('.section2__filters__wrapper');
-const sliders = document.querySelectorAll('.section2__slider__content');
+const sliders = document.querySelectorAll('.section2__slider');
 clickTraget.addEventListener('click', tabHandler);
 
 function tabHandler(e) {
