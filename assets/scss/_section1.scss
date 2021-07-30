@@ -55,13 +55,11 @@ header {
   }
 }
 
-.header__btn-register {
+%header__buttons {
   margin-left: 1rem;
   width: 15%;
   height: 5rem;
   border: none;
-  background: rgb(255, 115, 20);
-  background: linear-gradient(90deg, rgba(255, 115, 20, 1) 0%, rgba(255, 181, 2, 1) 35%);
   color: #ffff;
   text-transform: uppercase;
   font-weight: 900;
@@ -69,17 +67,17 @@ header {
   font-family: $font-lato;
 }
 
+.header__btn-register {
+  background: rgb(255, 115, 20);
+  background: linear-gradient(90deg, rgba(255, 115, 20, 1) 0%, rgba(255, 181, 2, 1) 35%);
+
+@extend %header__buttons;
+}
+
 .header__btn-login {
-  margin-left: 1rem;
-  width: 15%;
-  height: 5rem;
-  border: none;
   background: #664480;
-  color: #ffff;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 1.6rem;
-  font-family: $font-lato;
+
+@extend %header__buttons;
 }
 
 .header__wrapper-form {
@@ -281,7 +279,7 @@ header {
   }
 }
 
-.header__hide__mob {
-  display: flex;
-  justify-content: flex-end;
-}
+// .header__hide__mob {
+//   display: flex;
+//   justify-content: flex-end;
+// }
