@@ -68,7 +68,6 @@ header {
 }
 
 .header__btn-register {
-  background: rgb(255, 115, 20);
   background: linear-gradient(90deg, rgba(255, 115, 20, 1) 0%, rgba(255, 181, 2, 1) 35%);
 
 @extend %header__buttons;
@@ -279,7 +278,18 @@ header {
   }
 }
 
-// .header__hide__mob {
-//   display: flex;
-//   justify-content: flex-end;
-// }
+
+.btn-set__purple {
+  &:hover {
+    background: rgb(117, 71, 151);
+    background: linear-gradient(90deg, rgba(117, 71, 151, 1) 0%, rgba(187, 100, 195, 1) 35%);
+  }
+}
+
+.btn_set__orange {
+  transition: all .5s;
+
+  &:hover {
+    background: linear-gradient(90deg, rgba(255, 115, 20, 1) 35%);
+  }
+}
