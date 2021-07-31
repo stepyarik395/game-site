@@ -376,7 +376,7 @@
     flex-direction: column;
   }
 
-  .section4__img__wrapper img {
+  .section4__tab_hide {
     width: 100%;
   }
 
@@ -570,12 +570,9 @@
     padding-top: 2rem;
   }
 
-  .section4__img__wrapper {
-    padding-top: 2rem;
-
-    img {
-      width: 100%;
-    }
+  .section4__tab_hide {
+    margin-top: 2rem;
+    width: 100%;
   }
 
   .section4__side__card {
@@ -797,12 +794,9 @@
     }
   }
 
-  .section4__img__wrapper {
-    padding-top: 2rem;
-
-    img {
-      width: 100%;
-    }
+  .section4__tab_hide {
+    margin-top: 2rem;
+    width: 100%;
   }
 
   .section4__side__card {

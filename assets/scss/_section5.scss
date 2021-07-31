@@ -10,7 +10,6 @@
 }
 
 .footer__flex__container {
-  display: flex;
   padding-top: 2.5rem;
 
   span {
@@ -116,10 +115,6 @@
 
 .footer__form__wrapper {
   padding-top: 3rem;
-
-  form {
-    display: flex;
-  }
 }
 
 .footer__wrapper__icons__block {
