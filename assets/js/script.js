@@ -1,4 +1,4 @@
-function initsliders(params) {
+function initSliders(params) {
   $('.section1__slider').slick({
     dots: true,
     infinite: false,
@@ -106,7 +106,7 @@ function initsliders(params) {
   });
 }
 window.addEventListener('DOMContentLoaded', () => {
-  initsliders();
+  initSliders();
 });
 
 function getTimeRemaining(endtime) {
@@ -164,28 +164,22 @@ openModalButtons.forEach((button) => {
 });
 
 overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal-register.active');
-  modals.forEach((modal) => {
+  const modalRegister = document.querySelectorAll('.modal-register.active');
+  const modalLogin = document.querySelectorAll('.modal-login.active');
+  modalRegister.forEach((modal) => {
     closeModal(modal);
   });
-});
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal-login.active');
-  modals.forEach((modal) => {
+  modalLogin.forEach((modal) => {
     closeModal(modal);
   });
 });
 
 closeModalButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    const modal = button.closest('.modal-register');
-    closeModal(modal);
-  });
-});
-closeModalButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal-login');
-    closeModal(modal);
+    const modalRegister = button.closest('.modal-register');
+    const modalLogin = button.closest('.modal-login');
+    closeModal(modalRegister);
+    closeModal(modalLogin);
   });
 });
 
